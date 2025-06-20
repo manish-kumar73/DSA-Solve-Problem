@@ -34,7 +34,7 @@ int main(){
 
     int ans = palindromNumber(num);
     if(ans){
-        cout<<"Palindrome Number";
+        cout<<"Palindrome is Number";
     }else{
         cout<<"Not Palindrome Number";
     }
