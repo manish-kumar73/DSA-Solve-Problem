@@ -13,7 +13,7 @@ int factZeroCount(int num){
     for(int i=2; i<=num; i++){
         fact = fact * i;
     }
-    int countZero = 0;
+    int countZero =0;
     while(fact != 0){
         if(fact % 10 == 0){
             countZero++;
