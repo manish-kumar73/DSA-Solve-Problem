@@ -14,9 +14,13 @@ int factZeroCount(int num){
         fact = fact * i;
     }
     int countZero = 0;
-    while(fact % 10 == 0){
-        countZero++;
-        fact = fact / 10;
+    while(fact != 0){
+        if(fact % 10 == 0){
+            countZero++;
+            fact = fact / 10;
+        }else{
+            fact = fact / 10;
+        }
     }
     return countZero;
 }
@@ -30,7 +34,7 @@ int factorial(int num){
 }
 
 int main(){
-    int num = 10;
+    int num = 7;
     // cout<<factorial(num);
     // cout<<recursionFactorial(num);
     cout<<factZeroCount(num);
